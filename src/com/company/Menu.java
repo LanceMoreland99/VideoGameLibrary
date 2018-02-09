@@ -14,7 +14,8 @@ public class Menu {
         System.out.println("Welcome to the video game library, what would you like to do? \n" +
                 "1. add game to the library \n" +
                 "2. Remove a game from the library \n" +
-                "3. View what is currently in the Library \n4. Check a game out \n" +
+                "3. View what is currently in the Library \n" +
+                "4. Check a game out \n" +
                 "5. check a game in \n" +
                 "6. View checked out games \n" +
                 "7. Exit the program");
