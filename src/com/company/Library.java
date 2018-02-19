@@ -88,21 +88,25 @@ public class Library {
         //Go back to the menu
     }
 
-    protected void listCheckedOut() {
+    protected void listCheckedOut(int location) {
 
         System.out.println("This is your current checked out games.");
         if (checkedOutGames.isEmpty()){
             System.out.println("Your checkout list is empty");
 
             }
-            else { for (Game game : checkedOutGames) {
-                int index = 1;
+            else {
+            int index = 1;
+
+            for (Game game : checkedOutGames) {
                 System.out.println(index++ + " " + game.getTitle());
                 }
 
             }
 
         //Go back to menu
-        menu.startMenu();
+        if (location == 6) {
+            menu.startMenu();
+        }
     }
 }

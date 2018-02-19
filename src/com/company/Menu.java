@@ -57,16 +57,16 @@ public class Menu {
 
                 case 5:
                     //Check in game
-                    System.out.println("What game would you like to check back in?");
-                    library.listCheckedOut();
                     input.nextLine();
+                    System.out.println("What game would you like to check back in?");
+                    library.listCheckedOut(5);
                     library.checkedInGames(input.nextInt());
                     startMenu();
                     break;
 
                 case 6:
                     //View checked out games
-                    library.listCheckedOut();
+                    library.listCheckedOut(6);
                     break;
 
                 case 7:
