@@ -59,6 +59,7 @@ public class Menu {
                     //Check in game
                     System.out.println("What game would you like to check back in?");
                     library.listCheckedOut();
+                    input.nextLine();
                     library.checkedInGames(input.nextInt());
                     startMenu();
                     break;
